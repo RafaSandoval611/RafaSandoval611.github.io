@@ -1,0 +1,112 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #dfe9f3);
+    color: #2c3e50;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Encabezado principal */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3d59;
+}
+
+/* Subtítulos */
+h2, h3 {
+    color: #1e3d59;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+
+/* Menú */
+ul {
+    list-style: none;
+    padding-left: 0;
+    max-width: 300px;
+}
+
+ul a {
+    text-decoration: none;
+    display: block;
+}
+
+ul li {
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 18px;
+    margin: 6px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+    background-color: #1565c0;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+/* Tabla de productos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    font-size: 1rem;
+}
+
+td img {
+    width: 160px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+table tr:first-child td {
+    background-color: #43a047;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: none;
+}
+
+/* Responsivo básico */
+@media (max-width: 768px) {
+    table, td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    ul {
+        max-width: 100%;
+    }
+}
